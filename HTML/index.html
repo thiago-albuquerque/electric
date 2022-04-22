@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Font Family: Roboto, Michroma, Blinker -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@200&family=Michroma&family=Roboto&display=swap" rel="stylesheet">         
+
+        <!-- Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+        <title>Electric Car Rentals</title>
+
+        <link rel="stylesheet" href="../CSS/index.css"/>
+        
+    </head>
+
+    <body>
+        <!-- Menu -->
+        <header>            
+            <nav>
+                <img id="logo1" src="../Images/logo.png"/>
+                
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#modelsSection1">Models</a></li>
+                        <li><a href="#stationsSection">Station</a></li>
+                        <li><a href="#logoContainer1">Stores</a></li>
+                        <li><a href="#logoContainer1">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+
+                <button class="btnLogin"> <a class="btnLoginLink" href="./login.html"> LOGIN </a></button>
+            </nav>           
+        </header>
+
+        <main>
+            <!-- Banner Section -->
+            <section id="bannerSection">
+                <img id="bannerImg" src="../Images/bannerImg.jpg"/>
+
+                <h1 class="title">YOUR NEXT CAR IS HERE</h1>
+                <h4 class="subTitle">Find your favorite model</h4>
+
+                <div id="searchInput">
+                    <input type="text" id="search" placeholder="Enter your model here"/>
+                    <span class="material-icons-outlined">search</span>                    
+                </div>                           
+            </section>
+            
+            <!-- Models Section 1 -->
+            <section id="modelsSection1">
+                <div id="models1">
+
+                    <div class="item">
+                        <img class="modelsImg1" src="../Images/Tesla/tesla_s.png"/>  
+                        <h2 class="modelName1"> <a href="sedan.html"> Sedan </a> </h2>
+                    </div>
+
+                    <div class="item">
+                        <img class="modelsImg1" src="../Images/xc40.png"/> 
+                        <h2 class="modelName1"> Suv </h2>
+                    </div>
+                    
+                    <div class="item">
+                        <img class="modelsImg1" src="../Images/f150.png"/> 
+                        <h2 class="modelName1"> Pickup </h2>
+                    </div>
+                    
+                    <div class="item">
+                        <img class="modelsImg1" src="../Images/cupra.png"/> 
+                        <h2 class="modelName1"> Hatch </h2>
+                    </div>
+
+                    <div class="item">
+                        <img class="modelsImg1" src="../Images/c4.png"/> 
+                        <h2 class="modelName1"> Crossover </h2>
+                    </div>
+                    
+                    <div class="item">
+                        <img class="modelsImg1" src="../Images/eqv.png"/> 
+                        <h2 class="modelName1"> Van </h2>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Models Section 2 -->
+            <section id="modelsSection2">
+                <div id="models2">
+
+                    <div class="item2">
+                        <img class="modelsImg2" src="../Images/etron.png"/> 
+                        <h2 class="modelName2"> Sportive </h2>
+                    </div>
+                    
+                    <div class="item2">
+                        <img class="modelsImg2" src="../Images/i8.png"/> 
+                        <h2 class="modelName2"> Convertible </h2>
+                    </div>
+
+                </div>
+            </section>
+            
+            <!-- Changing Stations Section -->
+            <section id="stationsSection">
+                <h1 id="stationTitle">Charging Stations:</h1>
+
+                <div id="stationsContainer">
+                    <img id="loader" src="../Images/station.jpg"/>
+                    <div id="map"></div>
+                </div>                
+            </section>
+
+            <hr>
+            
+            <!-- Contact Section -->
+            <div id="logoContainer1">
+                <img id="logo2" src="../Images/logo.png"/>        
+                <h2 id="stores">Stores:</h2>
+            </div>
+
+            <section id="contactSection">
+                <div id="adressContainer">
+
+                    <div class="adressItems">
+                        <h3>Rio de Janeiro</h3>
+                        <h5>Av. Rio Branco, 000 - Centro - RJ</h5>
+
+                        <div class="whatsappLogo"> 
+                            <span class="material-icons-outlined">whatsapp</span>
+                            <h3>(00) 00000-0000</h3>
+                        </div>
+                    </div>
+
+                    <div class="adressItems">
+                        <h3>São Paulo</h3>
+                        <h5>Av. Paulista, 000 - Centro - SP
+                        </h5>
+                        
+                        <div class="whatsappLogo"> 
+                            <span class="material-icons-outlined">whatsapp</span>
+                            <h3>(00) 00000-0000</h3>
+                        </div>
+                    </div>
+
+                    <div class="adressItems">
+                        <h3>Brasília</h3>
+                        <h5>Eixo Monumental , 000 - Centro - DF</h5>
+                        
+                        <div class="whatsappLogo"> 
+                            <span class="material-icons-outlined">whatsapp</span>
+                            <h3>(00) 00000-0000</h3>
+                        </div>
+                    </div>
+
+                    <div class="adressItems">
+                        <h3>California</h3>
+                        <h5>000 Hollywood Boulevard, LA  </h5>
+                        
+                        <div class="whatsappLogo"> 
+                            <span class="material-icons-outlined">whatsapp</span>
+                            <h3>(00) 00000-0000</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="adressItems">
+                        <h3>Chicago</h3>
+                        <h5>000 Michigan Ave, IL </h5>
+                        
+                        <div class="whatsappLogo"> 
+                            <span class="material-icons-outlined">whatsapp</span>
+                            <h3>(00) 00000-0000</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="adressItems">
+                        <h3>New York</h3>
+                        <h5>000 5th Ave, NY </h5>
+                        
+                        <div class="whatsappLogo"> 
+                            <span class="material-icons-outlined">whatsapp</span>
+                            <h3>(00) 00000-0000</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="adressItems">
+                        <h3>Vancouver</h3>
+                        <h5>000 Robson St, Vancouver - BC</h5>
+                        
+                        <div class="whatsappLogo"> 
+                            <span class="material-icons-outlined">whatsapp</span>
+                            <h3>(00) 00000-0000</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="adressItems">
+                        <h3>Richmond Hill</h3>
+                        <h5>000 youge St, Richmond Hill - ON</h5>
+                        
+                        <div class="whatsappLogo"> 
+                            <span class="material-icons-outlined">whatsapp</span>
+                            <h3>(00) 00000-0000</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="adressItems">
+                        <h3>Montreal</h3>
+                        <h5>000 Av Papineau, Montreal - QC</h5>
+                        
+                        <div class="whatsappLogo"> 
+                            <span class="material-icons-outlined">whatsapp</span>
+                            <h3>(00) 00000-0000</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about">
+                <div class="aboutItems">
+                    <h1>Mission:</h1>
+                    <h4>To continuously achieve consistently better results in terms of Customer Satisfaction with our products and services.</h3>
+                </div>
+                
+                <div class="aboutItems">
+                    <h1>Vision:</h1>
+                    <h4>To be the world's leading company in consumer evaluation of automotive products and services.</h3>
+                </div>
+                
+                <div class="aboutItems">
+                    <h1>Values:</h1>
+                    <h4>We are a global, diverse family with a proud heritage, and we are truly committed to delivering exceptional products and services that improve people's lives.</h3>
+                </div>
+            </section>
+
+            <!-- Social Media Section -->
+            <section id="socialSection">
+                <div id="socialContainer">
+
+                    <div id="logoContainer2">
+                        <img id="logo3" src="../Images/logo.png"/>
+                    </div>
+
+                    <div id="socialIcons">
+                       <a href="#instagram"> <img id="instagramIcon" src="../Images/instagram.png"/> </a>
+                       <a href="#youtube"> <img id="youtubeIcon" src="../Images/youtube.png"/> </a>
+                    </div>
+
+                </div>
+            </section>            
+            
+        </main>  
+
+        
+        <!-- Whatsapp Button Pulse -->
+        <a href="#whatsapp"> <span id="whatsappPulse" class="material-icons-outlined"> whatsapp </span> </a>
+
+        <!-- Section Copyright -->
+        <footer>
+            <h4>Copyright © 2022 Electric Motors Company - All rights reserved</h4>
+        </footer>
+        
+        <!-- Up scroll button -->
+        <a id="scrollTop" href="#">
+            <span class="material-icons-outlined">arrow_upward</span>
+        </a>
+
+        <!-- Map Implementation -->
+        <script>            
+            function initMap() {
+            
+            const uluru = { lat: -22.95162, lng: -43.21077 };
+            
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: uluru,
+            });
+            
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+            }
+        </script>
+
+        <script
+            src="https://maps.googleapis.com/maps/api/js?callback=initMap&v=weekly"
+            async >
+        </script>
+    </body>
+
+</html>

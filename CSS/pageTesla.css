@@ -1,0 +1,343 @@
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+  
+* {
+  margin: 0;
+  padding: 0;
+}
+  
+body {
+  background-color: #313131;
+}
+  
+/* Hide Scrollbar */  
+::-webkit-scrollbar {
+  width: 8px;
+  height: 0;
+}
+::-webkit-scrollbar-track{
+  background: black;
+}
+::-webkit-scrollbar-thumb{
+  background: rgba(255, 255, 255, 0.582);
+  border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #57be08;
+}
+  
+/* Menu */  
+header {
+  width: 100%;
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 1px solid #fff;
+}
+#logo1 {
+  width: 90px;
+}
+nav {
+  max-width: 80%;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+}
+li {
+  list-style: none;
+  padding: 10px;
+}
+a{  
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}  
+a:hover{
+  color: #75b942;
+  transition-duration: 0.4s;
+}  
+.btnLogin {
+  color: #fff;
+  width: 90px;
+  background: transparent;
+  border: 1px solid #75b942;
+  border-radius: 5px;
+  padding: 8px;
+}
+.btnLogin:hover {
+  background-color: #75b94295;
+  transition-duration: 0.4s;
+}  
+.btnLoginLink{
+  color: #fff;
+}  
+.btnLoginLink:hover{
+  color: #fff;
+} 
+/* Informations Section  */
+#informationsSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+#modelsContainer {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+#item {
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.31);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin: 45px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}  
+#informationImg {
+  width: 70%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.31);
+  margin-top: -70px;
+}
+
+/* Numbers Informations */
+#informationName {
+  color: #fff;
+  font-family: "Michroma", sans-serif;
+  margin-top: 10px;
+}
+#numbersContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.numbers{
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+p{
+  font-family: "Blinker", sans-serif;
+}
+h3{
+  font-family: "Michroma", sans-serif;
+}
+
+
+/* Slide Image Section */
+#slideSection{
+  background-color: rgb(0, 0, 0);
+  padding: 30px;
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#slideContainer{
+  width: 1000px;
+  height: 488px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 10px;
+}
+.imageContainer{
+  width: 5000px;
+  height: 488px;
+  margin: auto;
+  position: relative;
+  animation-name: slideImage;
+  animation-duration: 33s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: running;
+}  
+.slideImage{
+  width: 1000px;
+  height: 488px;
+  float: left;
+}
+
+/* Details Section */
+#detailsSection{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#detailsContainer{
+  background-color: rgba(255, 255, 255, 0.31);
+  width: 60%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 30px;
+}
+h1{
+  font-family: "Michroma", sans-serif;
+}
+.detailsParagraph{
+  font-size: 22px;
+  text-align: center;
+  margin: 20px;
+} 
+
+/* Whatsapp Button Pulse */
+#whatsappPulse{
+  width: 45px;
+  height: 45px;
+  color: #75b942;
+  background-color: #29292933;
+  font-size: 35px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 100px;
+  left: 40px;
+  border-radius: 50px;
+}
+#whatsappPulse:after, #whatsappPulse:before{
+  content: '';
+  position: absolute;
+  left: -10px;
+  right: -10px;
+  top: -10px;
+  bottom: -10px;
+  border-radius: 50%;
+  border: 1px solid;
+  animation: whatsappPulse 1.5s linear infinite;
+}
+#whatsappPulse:after{
+  animation-delay: .4s;
+}
+  
+/* Section Copyright */  
+footer {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+  
+/* Up scroll button */  
+#scrollTop {
+  color: #75b942;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 100px;
+  right: 40px;
+  border-radius: 50px;
+  background-color: #29292933;
+  box-shadow: 1px 1px 2px #e6e6e6;
+}
+
+/* Responsive */
+@media only screen and (max-width: 699px) {  
+  h3{
+    font-size: 12px;
+  }
+  #slideContainer{
+    width: 400px;
+    height: 935px;
+    flex-direction: column;     
+  }
+  .imageContainer{
+    animation: none;
+    overflow: scroll;
+  } 
+  .slideImage{
+    width: 400px;
+    height: 187px;
+  }
+  footer{
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 700px) {
+  #slideContainer{
+    width: 800px;
+    height: 1870px;
+    flex-direction: column;     
+  }
+  .imageContainer{
+    animation: none;
+    overflow: scroll;
+  } 
+  .slideImage{
+    width: 800px;
+    height: 374px;
+  }
+}
+
+/* Button Whatsapp */
+@keyframes whatsappPulse {
+  0% {
+    transform: scale(.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+/* Image Animation Slide */
+@keyframes slideImage {
+  0% { left: 0px; }
+  10% { left: 0px; }
+  20% { left: -1000px; }
+  30% { left: -1000px; }
+  40% { left: -2000px; }
+  50% { left: -2000px; }
+  60% { left: -3000px; }
+  70% { left: -3000px; }
+  80% { left: -4000px; }
+  90% { left: -4000px; }
+  100% { left: 0px; }
+}
